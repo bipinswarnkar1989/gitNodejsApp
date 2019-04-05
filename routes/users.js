@@ -4,21 +4,7 @@ const fetch = require('node-fetch');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
-
-/* GET users listing. */
-router.get('/auth', function(req, res, next) {
-  fetch('https://api.github.com/users/bipinswarnkar1989/repos')
-    .then(res => res.json())
-    .then(json => {
-      console.log(json)
-      return res.json(json)
-    });
-  // return res.json({
-  //   success: true,
-  //   message: 'Login'
-  // })
+  res.send('Api Working Please read the Readme file of the repo for Api Usage');
 });
 
 /* GET user data. */
